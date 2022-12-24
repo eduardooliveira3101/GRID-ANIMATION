@@ -1,0 +1,151 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%
+}
+
+aside {
+  background-color: #8E9AAF;
+  max-width: 40rem;
+  text-align: center;
+  animation: anione 800ms;
+}
+
+aside img {
+  padding: 3rem 7.2rem 0;
+}
+
+main {
+  animation: anitwo 900ms;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas: "A B C"
+  "D B F"
+  "D E F";
+
+  padding: 3rem 4rem 0;
+  gap: 2rem;
+}
+
+.cards div:nth-child(1) {
+  grid-area: A;
+}
+
+.cards div:nth-child(2) {
+  grid-area: B;
+}
+
+.cards div:nth-child(3) {
+  grid-area: C;
+}
+
+.cards div:nth-child(4) {
+  grid-area: D;
+}
+
+.cards div:nth-child(5) {
+  grid-area: E ;
+}
+
+.cards div:nth-child(6) {
+  grid-area: F;
+}
+
+.cards img {
+  object-fit: cover;
+  height: auto;
+  width: 100%;
+}
+
+.cards img:hover {
+  transform: scale(1.1);
+  transition: 300ms;
+  opacity: 0.8;
+
+}
+
+aside h1 {
+  background-color: #CBC0D3;
+  filter: drop-shadow(rgba(0, 0, 0, 0.25));
+  color: #FFFFFF;
+
+  font-family: 'Staatliches', cursive;
+  font-weight: 400;
+  font-size: 4.8rem;
+  line-height: 3.4rem;
+
+  margin: 3.2rem 0;
+  padding: 2rem 7.4rem;
+}
+
+aside p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.5rem;
+  color: #FFFF;
+
+  margin: 3rem auto;
+  padding: 0 5.4rem;
+}
+
+.page {
+  display: flex;
+  gap: 9.8rem;
+}
+
+footer {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 2.8rem;
+  text-align: center;
+
+  margin: 3rem auto 2rem;
+  color: #4A4E69;
+}
+
+footer a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #4A4E69;
+}
+
+footer a:hover {
+  color: #62006b;
+  transition: 300ms;
+}
+
+@keyframes anione {
+
+  0% {
+    opacity: 0;
+    transform: translateX(-115px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+}
+
+@keyframes anitwo {
+
+  0% {
+    opacity: 0;
+    transform: translateX(110px);
+
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+}
